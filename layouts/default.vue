@@ -1,16 +1,16 @@
 <template>
   <v-app light>
     
-     <v-toolbar>
+     <v-toolbar dark color="red">
    
-    <v-toolbar-title>Adore Software</v-toolbar-title>
+    <v-toolbar-title to="/" >Adore Software</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn flat>About Us</v-btn>
-      <v-btn flat>Our Work</v-btn>
-      <v-btn flat>Our Plans</v-btn>
-      <v-btn flat>Why Choose us</v-btn>
-      <v-btn flat>Contact Us</v-btn>
+      <v-btn flat to="/AboutUs">About Us</v-btn>
+      <v-btn flat to="/OurWork">Our Work</v-btn>
+      <v-btn flat to="/OurPlans">Our Plans</v-btn>
+      <v-btn flat to="/ChooseUs">Why Choose us</v-btn>
+      <v-btn flat to="/ContactUs">Contact Us</v-btn>
     </v-toolbar-items>
   </v-toolbar>
     <v-content>
@@ -18,43 +18,69 @@
         <nuxt />
       </v-container>
     </v-content>
-    <v-navigation-drawer
-      temporary
-      :right="right"
-      v-model="rightDrawer"
-      fixed
-    >
-      <v-list>
-        <v-list-tile @click.native="right = !right">
-          <v-list-tile-action>
-            <v-icon light>compare_arrows</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
-    <v-footer :fixed="fixed" app>
-      <span>&copy; 2017</span>
+   
+    <v-footer>
+     
+        <v-layout >
+        <v-flex xs3 offset-xs1>
+          <v-card dark color="red">
+          Features
+          <br>
+          Android Development
+          <br>
+          Web Development
+          <br>
+          Branding and Promotion
+          <br>
+          CRM and ERP Development
+          <br>
+          Cloud Base App
+          </v-card>
+        </v-flex>
+       
+        <v-flex xs3>
+           <v-card dark color="red">
+          Services
+          <br>
+          IT Support
+          <br>
+          SEO Services
+          <br>
+          Software Consulting
+          <br>
+          Open Source
+          <br>
+          Software Developers
+          <br>
+          Software Development
+          <br>
+          Cloud Base App
+            </v-card>
+        </v-flex>
+      
+      <v-flex xs3>
+        <v-card dark color="red">
+         Contact Us!
+          <br>
+          ####, ## ####, #### #### ####, ######-##, #####, #####, 111111, India
+          <br>
+          General info@adoresoftware.com
+          <br>
+          Call Us: +91-8411911414
+           </v-card>
+        </v-flex>
+       
+        <v-flex>
+          <v-card dark color="red">
+          Privacy Policy 
+          <br>
+          Refund Policy 
+          <br>
+          Sitemap
+          </v-card>
+        </v-flex>
+        </v-layout>
+    
     </v-footer>
   </v-app>
 </template>
-
-<script>
-  export default {
-    data () {
-      return {
-        clipped: false,
-        drawer: true,
-        fixed: false,
-        items: [
-          { icon: 'apps', title: 'Welcome', to: '/' },
-          { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
-        ],
-        miniVariant: false,
-        right: true,
-        rightDrawer: false,
-        title: 'Vuetify.js'
-      }
-    }
-  }
-</script>

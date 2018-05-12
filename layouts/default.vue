@@ -19,68 +19,101 @@
       </v-container>
     </v-content>
    
-    <v-footer>
+   <footer>
+    <div class="wrapper">
      
-        <v-layout >
-        <v-flex xs3 offset-xs1>
-          <v-card dark color="red">
-          Features
-          <br>
-          Android Development
-          <br>
+    <div class="box">
+       Features
+      <hr>
+      <li>
+         Android Development
+      </li>
+       <li>
           Web Development
-          <br>
+      </li>
+       <li>
           Branding and Promotion
-          <br>
-          CRM and ERP Development
-          <br>
+      </li>
+       <li>
+          CRM & ERP Development
+      </li>
+       <li>
           Cloud Base App
-          </v-card>
-        </v-flex>
-       
-        <v-flex xs3>
-           <v-card dark color="red">
-          Services
-          <br>
+      </li>
+    </div>
+    <div class="box">
+     Services
+     <hr>
+      <ul>
+        <li>
           IT Support
-          <br>
-          SEO Services
-          <br>
+        </li>
+        <li>
+           SEO Services
+        </li>
+        <li>
           Software Consulting
-          <br>
-          Open Source
-          <br>
-          Software Developers
-          <br>
-          Software Development
-          <br>
-          Cloud Base App
-            </v-card>
-        </v-flex>
-      
-      <v-flex xs3>
-        <v-card dark color="red">
-         Contact Us!
-          <br>
-          ####, ## ####, #### #### ####, ######-##, #####, #####, 111111, India
-          <br>
-          General info@adoresoftware.com
-          <br>
-          Call Us: +91-8411911414
-           </v-card>
-        </v-flex>
-       
-        <v-flex>
-          <v-card dark color="red">
-          Privacy Policy 
-          <br>
-          Refund Policy 
-          <br>
-          Sitemap
-          </v-card>
-        </v-flex>
-        </v-layout>
+        </li>
+        <li>
+           Open Source
+        </li>
+         <li>
+            Software Developers
+        </li>
+         <li>
+            Cloud Base App
+        </li>
+        
+      </ul>
+     
+    </div>
+    <div class="box">
+       Contact Us!
+       <hr>
+      <ul>
+        <li>
+           #704, A Tower, <br>
+           Samarth Carina,<br> Chinchwad , <br>
+           Thegaon Road, Pune, 411033, India <br>
+           General info@adoresoftware.com
+           Call Us: +91-8411911414
+        </li>
+      </ul>
+      </div>
     
-    </v-footer>
+    <div class="box">
+      Privacy Policy 
+      <hr>
+      <ul>
+        <li>
+          Refund Policy 
+        </li>
+        <li>
+      Sitemap
+        </li>
+      </ul>
+      </div>
+     
+    </div>
+   </footer>
   </v-app>
 </template>
+
+<style scoped>
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgb(243, 63, 63);
+  color: #444;
+  justify-items: center;
+  
+}
+
+.box {
+  background-color:rgb(243, 63, 63);
+  color: white;
+  padding: 20px;
+  font-size: 10;
+}
+</style>
+

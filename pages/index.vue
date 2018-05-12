@@ -13,8 +13,10 @@
       </v-layout>
     </v-container>
   </v-jumbotron>
-  <p></p>
-  <p></p>
+
+  
+ <v-container>
+
   <v-layout >
     <v-flex sm4 >
   <cards></cards>
@@ -39,7 +41,7 @@
   <cards></cards>
     </v-flex>
   </v-layout>
-  
+ </v-container>
   </div>
 </template>
 

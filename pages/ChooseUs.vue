@@ -1,51 +1,26 @@
 <template>
   <v-layout column>
     <v-flex xs12 sm6 offset-sm3>
-      <v-toolbar color="indigo" dark>
-        <v-toolbar-side-icon></v-toolbar-side-icon>
-        <v-toolbar-title>Discover</v-toolbar-title>
-        <v-spacer></v-spacer>
-        <v-btn icon>
-          <v-icon>search</v-icon>
-        </v-btn>
-      </v-toolbar>
+      
       <v-card>
-        <v-container fluid grid-list-md>
-          <v-layout row wrap>
-            <v-flex
-              v-bind="{ [`xs${card.flex}`]: true }"
-              v-for="card in cards"
-              :key="card.title"
-            >
-              <v-card>
-                <v-card-media
-                  :src="card.src"
-                  height="200px"
-                >
-                  <v-container fill-height fluid>
-                    <v-layout fill-height>
-                      <v-flex xs12 align-end flexbox>
-                        <span class="headline white--text" v-text="card.title"></span>
-                      </v-flex>
-                    </v-layout>
-                  </v-container>
-                </v-card-media>
-                <v-card-actions>
-                  <v-spacer></v-spacer>
-                  <v-btn icon>
-                    <v-icon>favorite</v-icon>
-                  </v-btn>
-                  <v-btn icon>
-                    <v-icon>bookmark</v-icon>
-                  </v-btn>
-                  <v-btn icon>
-                    <v-icon>share</v-icon>
-                  </v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-flex>
-          </v-layout>
-        </v-container>
+     SoftKiwi Technologies undertake a holistic approach towards each project that we work on. So we put a lot of hard work in understanding the real needs and addressing them.
+
+Right from research, to probing into business objectives of our clients, we do a significant deliberation intended at a precisely successful outcome.
+
+Our commitment is towards accomplishing high levels of customer contentment, which comes by achieving great quality in the outcome, providing timely solutions and fulfilling the needs of the businesses pertaining to communication with their clients/customers.
+
+What makes us different.
+Expertise
+Our qualified, professional teams are made up of the industry’s best and brightest software engineers.
+
+Experience
+Our extensive experience spans across public and private sector firms of all sizes. We understand business processes and technologies and the challenges you face.
+
+Research and Development
+Our teams are continually researching new and proven technologies to benefit our clients.
+
+Affordability
+SoftKiwi Technologies are dedicated to provide you high quality software services to deliver robust, scalable, and cost-effective solutions within your budget
       </v-card>
     </v-flex>
   </v-layout>

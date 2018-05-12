@@ -10,11 +10,11 @@
       <v-btn flat to="/AboutUs">About Us</v-btn>
       <v-btn flat to="/OurWork">Our Work</v-btn>
 
-       <v-menu offset-y>
+    <v-menu offset-y>
       <v-btn flat slot="activator" dark>Our Plans</v-btn>
       <v-list>
-        <v-list-tile v-for="item in items" :key="item.title" @click="">
-          <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+        <v-list-tile v-for="item in items" :key="item.title" @click="select($event)">
+          <v-list-tile-title to="/AboutUs">{{ item.title }}</v-list-tile-title>
         </v-list-tile>
       </v-list>
     </v-menu>
@@ -86,10 +86,10 @@
       <ul>
         <li>
            #704, A Tower, <br>
-           Samarth Carina,<br> Chinchwad , <br>
-           Thegaon Road, Pune, 411033, India <br>
+           cccccccc cccccccc,<br> xxxxxxxxx , <br>
+           tttttttt rrrrrrrr, xxxx, xxxxxx, xxxxx <br>
            General info@adoresoftware.com
-           Call Us: +91-8411911414
+           Call Us: +91-xxxxxxxxxxx
         </li>
       </ul>
       </div>
@@ -134,12 +134,19 @@
   export default {
     data: () => ({
       items: [
-        { title: 'Click Me' },
-        { title: 'Click Me' },
-        { title: 'Click Me' },
-        { title: 'Click Me 2' }
+        { title: 'web-design-plans' },
+        { title: 'wordpress-plans' },
+        { title: 'e-commerce-plans' },
+        { title: 'seo-plans' },
+        {title: 'smo-plans'}
       ]
-    })
+    }),
+    methods: {
+      select: function (event) {
+        console.log('In console')
+      }
+    }
+
   }
 </script>
 

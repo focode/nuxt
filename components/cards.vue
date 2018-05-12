@@ -1,6 +1,6 @@
 <template>
   
-      <v-card>
+      <v-card  color = "light-blue lighten-3">
         <v-card-media src="/static/doc-images/cards/desert.jpg" height="200px">
         </v-card-media>
         <v-card-title primary-title>
@@ -10,8 +10,8 @@
           </div>
         </v-card-title>
         <v-card-actions>
-          <v-btn flat color="orange">Share</v-btn>
-          <v-btn flat color="orange">Explore</v-btn>
+          <v-btn flat color="blue darken-4">Share</v-btn>
+          <v-btn flat color="blue darken-4">Explore</v-btn>
         </v-card-actions>
       </v-card>
    

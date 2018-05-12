@@ -5,12 +5,25 @@
    
     <v-toolbar-title to="/" >Adore Software</v-toolbar-title>
     <v-spacer></v-spacer>
+
     <v-toolbar-items class="hidden-sm-and-down">
       <v-btn flat to="/AboutUs">About Us</v-btn>
       <v-btn flat to="/OurWork">Our Work</v-btn>
-      <v-btn flat to="/OurPlans">Our Plans</v-btn>
+
+       <v-menu offset-y>
+      <v-btn flat slot="activator" dark>Our Plans</v-btn>
+      <v-list>
+        <v-list-tile v-for="item in items" :key="item.title" @click="">
+          <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+        </v-list-tile>
+      </v-list>
+    </v-menu>
+
       <v-btn flat to="/ChooseUs">Why Choose us</v-btn>
       <v-btn flat to="/ContactUs">Contact Us</v-btn>
+
+     
+
     </v-toolbar-items>
   </v-toolbar>
     <v-content>
@@ -116,4 +129,17 @@
   font-size: 10;
 }
 </style>
+
+<script>
+  export default {
+    data: () => ({
+      items: [
+        { title: 'Click Me' },
+        { title: 'Click Me' },
+        { title: 'Click Me' },
+        { title: 'Click Me 2' }
+      ]
+    })
+  }
+</script>
 

@@ -1,6 +1,6 @@
 <template>
 <div>
-  <v-jumbotron color="grey lighten-2">
+  <v-jumbotron color="teal">
     <v-container fill-height>
       <v-layout align-center>
         <v-flex>
@@ -15,7 +15,7 @@
   </v-jumbotron>
 
   
- <v-container>
+ <v-container >
 
   <v-layout >
     <v-flex sm4 >

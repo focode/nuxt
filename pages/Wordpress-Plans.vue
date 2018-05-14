@@ -1,7 +1,7 @@
 <template>
 <div >
     <div class="label">
-         <h1 >SEO Plans</h1>
+         <h1 >Wordpress Plans</h1>
     </div>
 
 

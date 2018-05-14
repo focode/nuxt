@@ -1,9 +1,11 @@
 <template>
   <v-app light>
     
-     <v-toolbar dark color="red">
+     <v-toolbar  dark color="red">
    
-    <v-toolbar-title to="/" >Adore Software</v-toolbar-title>
+    <v-toolbar-title >
+      <v-btn flat small to="/">Adore Software</v-btn>
+      </v-toolbar-title>
     <v-spacer></v-spacer>
 
     <v-toolbar-items class="hidden-sm-and-down">
@@ -13,8 +15,10 @@
     <v-menu offset-y>
       <v-btn flat slot="activator" dark>Our Plans</v-btn>
       <v-list>
-        <v-list-tile v-for="item in items" :key="item.title" @click="select($event)">
-          <v-list-tile-title to="/AboutUs">{{ item.title }}</v-list-tile-title>
+        <v-list-tile :to="item.path" v-for="item in items" :key="item.title" @click="select($event)">
+          <v-list-tile-title  >{{ item.title }}
+          </v-list-tile-title>
+
         </v-list-tile>
       </v-list>
     </v-menu>
@@ -134,11 +138,16 @@
   export default {
     data: () => ({
       items: [
-        { title: 'web-design-plans' },
-        { title: 'wordpress-plans' },
-        { title: 'e-commerce-plans' },
-        { title: 'seo-plans' },
-        {title: 'smo-plans'}
+        { title: 'web-design-plans',
+          path: '/WebDesignPlan'},
+        { title: 'wordpress-plans',
+          path: '/Wordpress-Plans'},
+        { title: 'e-commerce-plans',
+          path: '/E-Commerce-Plans'},
+        { title: 'seo-plans',
+          path: '/Seo-Plans'},
+        { title: 'smo-plans',
+          path: '/Smo-Plans'}
       ]
     }),
     methods: {

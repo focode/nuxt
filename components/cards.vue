@@ -1,7 +1,7 @@
 <template>
   
-      <v-card  color = "light-blue lighten-3">
-        <v-card-media src="/static/doc-images/cards/desert.jpg" height="200px">
+      <v-card class="bgcolor">
+        <v-card-media src="/images/sample-1.jpg" height="200px">
         </v-card-media>
         <v-card-title primary-title>
           <div>
@@ -10,8 +10,8 @@
           </div>
         </v-card-title>
         <v-card-actions>
-          <v-btn flat color="blue darken-4">Share</v-btn>
-          <v-btn flat color="blue darken-4">Explore</v-btn>
+          <v-btn flat color="red darken-4">Share</v-btn>
+          <v-btn flat color="red darken-4">Explore</v-btn>
         </v-card-actions>
       </v-card>
    
@@ -25,4 +25,12 @@
       }
     }
   }
+  
 </script>
+
+<style scoped>
+.bgcolor {
+  /* background-color: #F44336; */
+  /* color: white; */
+}
+</style>

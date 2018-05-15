@@ -13,7 +13,7 @@
             Plan 1
         </li>
          <li class="items-inside">
-            8,000 </br>
+            8,000 <br>
             INR/month
 
         </li>
@@ -36,7 +36,7 @@
             Monthly Reports
         </li>
         <li  class="items-inside">
-             <v-btn color="info">Contact Now</v-btn>
+             <v-btn to="/ContactUs" dark large color="red">Contact Now</v-btn>
             
         </li>
     </ul>
@@ -47,7 +47,7 @@
             Plan 2
         </li>
          <li class="items-inside">
-            8,000 </br>
+            8,000 <br>
             INR/month
 
         </li>
@@ -70,7 +70,7 @@
             Monthly Reports
         </li>
         <li  class="items-inside">
-             <v-btn color="info">Contact Now</v-btn>
+             <v-btn to="/ContactUs" dark large color="red">Contact Now</v-btn>
             
         </li>
     </ul>
@@ -81,7 +81,7 @@
             Plan 3
         </li>
          <li class="items-inside">
-            8,000 </br>
+            8,000 <br>
             INR/month
 
         </li>
@@ -104,7 +104,7 @@
             Monthly Reports
         </li>
         <li  class="items-inside">
-             <v-btn color="info">Contact Now</v-btn>
+             <v-btn to="/ContactUs" dark large color="red">Contact Now</v-btn>
             
         </li>
     </ul>
@@ -115,7 +115,7 @@
             Plan 4
         </li>
          <li class="items-inside">
-            8,000 </br>
+            8,000 <br>
             INR/month
 
         </li>
@@ -138,7 +138,7 @@
             Monthly Reports
         </li>
         <li  class="items-inside">
-             <v-btn color="info">Contact Now</v-btn>
+             <v-btn to="/ContactUs" dark large color="red">Contact Now</v-btn>
             
         </li>
     </ul>

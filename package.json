@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "nuxt": "^1.0.0",
+    "v-img": "^0.2.0",
+    "vlightbox": "^2.0.2",
     "vuetify": "^1.0.0"
   },
   "devDependencies": {

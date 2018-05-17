@@ -115,7 +115,7 @@
             Plan 4
         </li>
          <li class="items-inside">
-            8,000 <br>
+            9,000 <br>
             INR/month
 
         </li>
